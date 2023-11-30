@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import FormTest from "./components/Form";
+import PrintData from "./components/PrintData";
 
 function App() {
+  const [dataForm, setdataForm] = useState(null)
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <FormTest setData={setdataForm} />
+      {
+        dataForm && (
+          <PrintData data={dataForm} />
+        )
+      }
     </div>
   );
 }
