@@ -32,3 +32,8 @@ Certifique-se de que você tenha o [Node.js](https://nodejs.org/) e o [npm](http
    ```bash
    npm start
    ```
+
+---
+
+
+### Ou acesse o projeto pela [Vercel](https://insight-it-test-form.vercel.app/)
